@@ -12,13 +12,6 @@
   "main": "dist/vite-lib.umd.js",
   "module": "dist/vite-lib.es.js",
   "types": "dist/components/collect.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/components/collect.d.ts",
-      "import": "./dist/vite-lib.es.js",
-      "require": "./dist/vite-lib.umd.js"
-    }
-  },
   "devDependencies": {
     "@types/node": "^20.2.5",
     "@vitejs/plugin-vue": "^4.1.0",
