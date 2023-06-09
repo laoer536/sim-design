@@ -1,24 +1,28 @@
 {
   "name": "sim-design",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "release": "pnpm build && standard-version && git push --follow-tags && pnpm publish --no-git-checks"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "dist/vite-lib.umd.js",
   "module": "dist/vite-lib.es.js",
   "types": "dist/components/collect.d.ts",
   "devDependencies": {
     "@types/node": "^20.2.5",
     "@vitejs/plugin-vue": "^4.1.0",
+    "standard-version": "^9.5.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.9",
     "vite-plugin-dts": "^2.3.0",
-    "vue-tsc": "^1.4.2",
-    "vue": "^3.2.47"
+    "vue": "^3.2.47",
+    "vue-tsc": "^1.4.2"
   }
 }
