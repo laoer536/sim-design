@@ -2,7 +2,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "demo:dev":"pnpm --filter demo run dev",
-    "build": "pnpm --filter sim-design run build"
+    "build": "pnpm --filter sim-design run build",
+    "release": "pnpm --filter sim-design run release"
   },
   "workspaces": [
     "packages/*"

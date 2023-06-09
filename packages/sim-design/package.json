@@ -16,13 +16,15 @@
   "files": [
     "dist"
   ],
-  "main": "dist/vite-lib.umd.js",
-  "module": "dist/vite-lib.es.js",
-  "types": "dist/components/collect.d.ts",
+  "main": "index.ts",
+  "module": "index.ts",
   "devDependencies": {
     "@types/node": "^20.2.5",
     "@vitejs/plugin-vue": "^4.1.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
     "standard-version": "^9.5.0",
+    "tailwindcss": "^3.3.2",
     "typescript": "^5.0.2",
     "vite": "^4.3.9",
     "vite-plugin-dts": "^2.3.0",
