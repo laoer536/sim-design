@@ -1,7 +1,7 @@
 {
   "name": "sim-design",
   "private": false,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A minimalist and refreshing UI component library for vue3.",
   "author": "laoer536 <1547698569@qq.com>",
   "repository": "git@github.com:laoer536/sim-design.git",
