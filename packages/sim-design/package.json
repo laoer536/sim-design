@@ -2,7 +2,7 @@
   "name": "sim-design",
   "private": false,
   "version": "0.0.5",
-  "description": "Add some useful utils to your project. No more 'ctrl C V'.",
+  "description": "A minimalist and refreshing UI component library for vue3.",
   "author": "laoer536 <1547698569@qq.com>",
   "repository": "git@github.com:laoer536/sim-design.git",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "release": "pnpm build && standard-version && git push --follow-tags && pnpm publish --no-git-checks"
+    "release": "pnpm build && standard-version && git push --follow-tags && pnpm publish"
   },
   "files": [
     "dist"
