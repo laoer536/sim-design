@@ -13,9 +13,9 @@ const count = ref(0)
     <div>
       <button type="button" @click="count++">count is {{ count }}</button>
       <p>
-        <span>编辑</span>
-        <span>您好</span>
-        <span>世界</span>
+        <span class="font-bold">编辑</span>
+        <span class="font-medium">您好</span>
+        <span class="font-serif">世界</span>
         <code>components/HelloWorld.vue</code>
         to test HMR
       </p>
