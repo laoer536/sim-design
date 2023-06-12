@@ -15,7 +15,7 @@ const count = ref(0)
       <p>
         <span class="font-bold">编辑</span>
         <span class="font-medium">您好</span>
-        <span class="font-serif">世界</span>
+        <span class="italic">世界</span>
         <code>components/HelloWorld.vue</code>
         to test HMR
       </p>
