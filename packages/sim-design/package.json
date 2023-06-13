@@ -1,7 +1,7 @@
 {
   "name": "sim-design",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A minimalist and refreshing UI component library for vue3.",
   "author": "laoer536 <1547698569@qq.com>",
   "repository": "git@github.com:laoer536/sim-design.git",
@@ -11,15 +11,15 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "release": "pnpm build && standard-version && git push --follow-tags && pnpm publish"
+    "release": "pnpm set-entrance --mode=pre && pnpm build && standard-version && git push --follow-tags && pnpm publish && pnpm set-entrance --mode=after",
+    "set-entrance": "jiti scripts/release.ts"
   },
   "files": [
     "dist"
   ],
-  "main": "index.ts",
-  "module": "index.ts",
+  "main": "dist/vite-lib.umd.js",
+  "module": "dist/vite-lib.es.js",
   "devDependencies": {
-    "@types/node": "^20.2.5",
     "@vitejs/plugin-vue": "^4.1.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",

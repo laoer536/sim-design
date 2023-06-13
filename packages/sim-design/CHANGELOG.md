@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/laoer536/sim-design/compare/v0.0.6...v0.0.7) (2023-06-13)
+
+
+### Features
+
+* tailwindcss ([5fdc980](https://github.com/laoer536/sim-design/commit/5fdc98014b3cc35a73033d465f8ec2019b7e3907))
+* 使用时的首选字体配置 ([b5bcae8](https://github.com/laoer536/sim-design/commit/b5bcae830fa40a427b20fa00bedafa260fcebba5))
+* 使用时的首选字体配置 ([0c0f7d4](https://github.com/laoer536/sim-design/commit/0c0f7d439479c3e2058efecd1beb5c8a7849768a))
+* 使用时的首选字体配置 ([a3c9117](https://github.com/laoer536/sim-design/commit/a3c9117f3342d9bfae80e913a0132b01577ee4ba))
+* 使用时的首选字体配置 ([d0c5d47](https://github.com/laoer536/sim-design/commit/d0c5d47974a34fa5b4e91346f321c01013855afd))
+
 ### [0.0.6](https://github.com/laoer536/sim-design/compare/v0.0.5...v0.0.6) (2023-06-09)
 
 
