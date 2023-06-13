@@ -4,6 +4,7 @@ import consola from 'consola'
 interface PackageJsonInfo {
   main: string
   module: string
+  types?: string
   [k: string]: string
 }
 
@@ -16,9 +17,11 @@ function setEntrance(mode: Mode) {
   if (mode == 'pre') {
     packageJson.main = 'dist/vite-lib.umd.js'
     packageJson.module = 'dist/vite-lib.es.js'
+    packageJson.types = 'dist/index.d.ts'
   } else if (mode === 'after') {
     packageJson.main = 'index.ts'
-    packageJson.module = 'index.js'
+    packageJson.module = 'index.ts'
+    delete packageJson.types
   } else {
     consola.error(new Error('Can not resolve this mode'))
     return
