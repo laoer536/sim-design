@@ -1,7 +1,7 @@
 {
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "demo:dev":"pnpm --filter demo run dev",
+    "demo:dev": "pnpm --filter demo run dev",
     "build": "pnpm --filter sim-design run build",
     "release": "pnpm --filter sim-design run release"
   },
@@ -12,8 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.2.5",
+    "consola": "^3.1.0",
     "eslint": "^8.42.0",
     "eslint-config-code-style-lint-vue3-ts": "^3.0.6",
+    "jiti": "^1.18.2",
+    "minimist": "^1.2.8",
     "prettier": "^2.8.8"
   }
 }
