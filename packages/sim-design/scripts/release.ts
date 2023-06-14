@@ -1,17 +1,20 @@
 import minimist from 'minimist'
 import { writeFileSync, readFileSync } from 'fs'
+import { getFormatCode } from '../utils'
 import consola from 'consola'
 interface PackageJsonInfo {
   main: string
   module: string
   types?: string
-  [k: string]: string
 }
-
 type Mode = 'pre' | 'after'
+
 const mode = minimist(process.argv.slice(2)).mode as Mode
-setEntrance(mode)
-function setEntrance(mode: Mode) {
+setEntrance(mode).catch((err) => {
+  consola.error(new Error(`${err}`))
+})
+
+async function setEntrance(mode: Mode) {
   consola.info(`setEntranceMode:${mode}`)
   const packageJson = JSON.parse(readFileSync('./package.json', 'utf8')) as PackageJsonInfo
   if (mode == 'pre') {
@@ -26,5 +29,5 @@ function setEntrance(mode: Mode) {
     consola.error(new Error('Can not resolve this mode'))
     return
   }
-  writeFileSync('./package.json', JSON.stringify(packageJson, null, 2))
+  writeFileSync('./package.json', await getFormatCode(JSON.stringify(packageJson, null, 2), { parser: 'json' }))
 }
