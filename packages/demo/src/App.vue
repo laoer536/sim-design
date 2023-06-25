@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { HelloWorld } from 'sim-design'
+import { HelloWorld, SimButton } from 'sim-design'
+function log() {
+  console.log('fffff')
+}
 </script>
 
 <template>
@@ -12,6 +15,9 @@ import { HelloWorld } from 'sim-design'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <SimButton @click="log" type="full">
+    <span class="text-white">button</span>
+  </SimButton>
 </template>
 
 <style scoped>
